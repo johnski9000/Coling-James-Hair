@@ -716,10 +716,11 @@ margin-bottom: 20px;
   width: 90%;
   display: flex;
   position: relative;
-  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
-.feed_container article:nth-child(2) {
-  margin-left: 20px;
+.feed_container article{
+  margin-right: 20px;
 
 }
 .feed_container article:nth-child(3) {
@@ -742,7 +743,9 @@ margin-bottom: 20px;
         box-shadow: 0 1px 4px 0 rgb(0 0 0 / 22%);
         height: 350px !important;
 position: relative;
+margin-right: 20px;
     }
+    
     .insta_text_wrapper {
       border-radius: unset !important;
   background: unset !important;

@@ -4,7 +4,6 @@ import axios from "axios";
 const InstaFeeds = () => {
   const [feeds, setFeedsData] = useState([]);
   //use useRef to store the latest value of the prop without firing the effect
-
   useEffect(() => {
     // this is to avoid memory leaks
     const abortController = new AbortController();
@@ -13,7 +12,7 @@ const InstaFeeds = () => {
       try {
         axios
           .get(
-            `https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption,username,timestamp,thumbnail_url&limit=4&access_token=IGQVJXT0lWZAGF3dXVqSW9lc2lybkFDdkt3MWVfenozcXNTbWZATREFOOW4yVk5vZAEhoU3FUTnI0eUFLcVVOVG9CRnVmZAnV5V0RxZAThwMGVHckNnSHozbTExOXU2aWc4RDZAvODZAvRkVR`
+            `https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption,username,timestamp,thumbnail_url&limit=4&access_token=${process.env.REACT_APP_MY_VARIABLE}`
           )
           .then((resp) => {
             setFeedsData(resp.data.data);
@@ -40,6 +39,8 @@ const InstaFeeds = () => {
           <p>Check out our latest news and updates</p>
         </div>
         <div className="feed_container">
+            <div className="left"></div>
+            <div className="right"></div>
           {feeds ? (
             feeds.map((item, index) => (
               <article key={index}>
