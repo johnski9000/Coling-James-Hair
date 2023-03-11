@@ -393,7 +393,6 @@
 /* about section  */
 
 .about_wrapper {
-  margin-top: 30px;
   background-color: white;
   height: auto;
 }
@@ -402,7 +401,7 @@
 } */
 @media screen and (max-width: 768px){
   .about_wrapper {
-    padding: 20px 25px 60px 25px;
+    padding: 50px 25px 60px 25px;
   }
   .about_gallery_wrapper {
     width: 100%;
@@ -721,10 +720,8 @@ margin-bottom: 20px;
 }
 .feed_container article{
   margin-right: 20px;
-
 }
 .feed_container article:nth-child(3) {
-  margin-left: 20px;
   margin-right: 20px;
 
 }
@@ -737,6 +734,7 @@ margin-bottom: 20px;
   .feed_container {
     min-height: 370px;
   }
+
   .feed_container article {
     border-radius: 0 0 10px 10px;
         background: #fff;
@@ -849,4 +847,92 @@ cursor: pointer;
     font-size: 15px;
     border-radius: 5px;
     padding: 10px 40px;
+}
+
+/* footer section */
+.footer_wrapper {
+  background: #1b202a;
+  min-height: 400px;
+  padding: 60px 30px 20px 30px;
+  border-bottom: 1px solid #484545;
+}
+.copyright {
+  font-family: 'PT Sans', sans-serif;
+  padding: 30px 10px;
+  font-size: 12px;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    display: none;
+  }
+  .footer_mobile_title {
+    color: #f01887;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
+  }
+  .mobile_footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  .mobile_footer ul li a {
+    color: white;
+    line-height: 2rem;
+    font-family: 'PT Sans', sans-serif;
+    font-size: .9rem;
+  }
+  .socials_footer_mobile {
+    display: flex;
+    list-style: none;
+  }
+  .socials_footer_mobile li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer_wrapper {
+    padding: 59px 30px 20px 50px !important;
+  }
+  .mobile_footer {
+    display: none;
+  }
+  .footer {
+    display: flex;
+  }
+  .footer_left {
+    flex: 1.8;
+  }
+  .footer_right {
+    flex: 1;
+  }
+  .footer_mobile_title {
+    color: #f01887;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.5rem;
+  }
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .footer ul li a {
+    color: white;
+    line-height: 2rem;
+    font-family: 'PT Sans', sans-serif;
+    font-size: .9rem;
+  }
+  .socials_footer_mobile {
+    display: flex;
+    list-style: none;
+  }
+  .socials_footer_mobile li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+  }
 }

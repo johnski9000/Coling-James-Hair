@@ -31,7 +31,7 @@ function Banner() {
             <a href="/">Contact Now</a>
           </div>
         </div>
-        <div></div>
+        {/* <div></div> */}
       </div>
       {/* </Parallax> */}
       
