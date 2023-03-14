@@ -2,7 +2,8 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='footer_wrapper'>
+    <div className='footer_main'>
+         <div className='footer_wrapper'>
         <div className='mobile_footer'>
             <div className='footer_mobile_title'>Quick Links</div>
             <ul>
@@ -56,6 +57,8 @@ function Footer() {
             </div>
         </div>
     </div>
+    </div>
+   
   )
 }
 

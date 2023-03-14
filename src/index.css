@@ -893,9 +893,22 @@ cursor: pointer;
   }
 }
 @media screen and (min-width: 768px) {
-  .footer_wrapper {
-    padding: 59px 30px 20px 50px !important;
+  .footer_main {
+    width: 100%;
+    background: #1b202a;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .footer_wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 20px !important;
+
+    }
   .mobile_footer {
     display: none;
   }
