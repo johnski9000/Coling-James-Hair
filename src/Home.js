@@ -16,7 +16,7 @@ function Home() {
         <PriceSection/>
         <InstaFeeds/>
         <Footer/>
-        <div className="copyright" style={{backgroundColor: "#1b202a", textAlign:"center", color:"#ffffff"}}>Copyright © 2023 Beauty Nails</div>
+        <div className="copyright" style={{backgroundColor: "#045959", textAlign:"center", color:"#ffffff"}}>Copyright © 2023 Beauty Nails</div>
     </div>
   );
 }

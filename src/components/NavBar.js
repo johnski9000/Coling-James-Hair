@@ -8,7 +8,7 @@ function NavBar() {
       <div className="header_wrapper">
         <div className="logo">
           <img
-            src="https://smartinggoods.com/beautynails/wp-content/uploads/sites/36/2022/11/Black-And-Beige-Luxury-Minimalist-Beauty-Salon-Logo-1080-%C3%97-720-px-180x80.png"
+            src="https://i8.amplience.net/i/jpl/shed-500-300px-200-90px-350-90px-350-100px-250-100px-2-1-dd77420df1da5b36bf717802e8e5b271"
             alt="logo"
             width={180}
             height={80}
@@ -24,7 +24,7 @@ function NavBar() {
               src="https://i8.amplience.net/i/jpl/phone-call-877402671b025927871de04103cbe388"
               alt=""
             />
-            <div className="phone_number">+1 916-875-2235</div>
+            <div className="phone_number">07790611737</div>
           </div>
         </div>
         <button className={open === false ? "hamburger" : "hamburger is-active"} onClick={() => setOpen(!open)}>

@@ -1,7 +1,9 @@
 /* navigation */
 .header {
+  padding: 7px 0px;
   height: 100px;
-  background-color: rgba(0,0,0,0.69);
+  /* background-color: rgba(0,0,0,0.69); */
+  background-color: #045959;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -59,7 +61,8 @@
 }
 .hamburger:hover span:nth-child(2) {
   transform: translateX(10px);
-  background-color: #f01887;
+  /* background-color: #f01887; */
+  background-color: #045959;
 }
 .hamburger.is-active span:nth-child(1) {
   transform: translate(0px, -2px) rotate(45deg);
@@ -72,7 +75,8 @@
   transform: translate(-3px, 3px) rotate(-45deg);
 }
 .hamburger.is-active:hover span {
-  background-color: #f01887;
+  /* background-color: #f01887; */
+  background-color: #045959;
 }
 @media screen and (min-width: 768px) {
   .hamburger {
@@ -96,29 +100,34 @@
   width: 100%;
 }
 @media screen and (max-width: 768px) {
+  .logo {
+    display: flex;
+  }
   .logo img {
-    width: 130px;
-    height: auto;
+    width: auto;
+    height: 100px;
   }
 }
 .number {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 155px;
   margin-left: 20px;
   margin-right: 15px;
 }
 .number img {
   max-width: 30px;
+  margin-right: 10px;
 }
 .phone_number {
   color: #C9C9C9;
   transition: 1s;
 }
 .phone_number:hover {
-  color: #f01887;
+  /* color: #f01887; */
+  color: #045959;
   transition: 1s;
 }
 
@@ -149,7 +158,8 @@
   .text_overlay_address {
     font-family: 'Philosopher', sans-serif;
     width: 100%;
-    color: #f01887;
+    /* color: #f01887; */
+    color: #045959;
 
   }
   .text_overlay_title {
@@ -222,7 +232,8 @@
   .text_overlay_address {
     font-family: 'Philosopher', sans-serif;
     width: 100%;
-    color: #f01887;
+    /* color: #f01887; */
+    color: #045959;
 
   }
   .text_overlay_title {
@@ -296,7 +307,8 @@
   .text_overlay_address {
     font-family: 'Philosopher', sans-serif;
     width: 100%;
-    color: #f01887;
+    /* color: #f01887; */
+    color: #045959;
 
   }
   .text_overlay_title {
@@ -343,7 +355,8 @@
 }
 .text_overlay_button_container a:nth-child(2):hover {
   background-color: white;
-  color: #f01887;
+  /* color: #f01887; */
+  color: #045959;
   transition: .5s;
 }
 
@@ -524,7 +537,8 @@
   position: relative;
 }
 .discount_banner_overlay {
-  background-color: #FF4B6F;
+  /* background-color: #FF4B6F; */
+  background-color: #045959;
   opacity: 0.75;
   position: absolute;
   top: 0;
@@ -632,14 +646,16 @@
   font-family: 'Philosopher', sans-serif !important;
   position: relative;
   margin-bottom: 70px;
-  color: #FF4B6F;
+  /* color: #FF4B6F; */
+  color: #045959;
 }
 .underline_price {
   position: absolute;
   width: 50px;
   height: 2px;
   border-radius: 40px;
-  background-color: #FF4B6F;
+  /* background-color: #FF4B6F; */
+  background-color: #045959;
   bottom: -20px;
 }
 .prices {
@@ -649,7 +665,8 @@
   font-family: 'Philosopher',sans-serif;
 }
 .price_block {
-  color: #FF4B6F;
+  /* color: #FF4B6F; */
+  color: #045959;
   font-family: 'Philosopher',sans-serif;
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {
@@ -703,7 +720,8 @@ margin-bottom: 20px;
   font-family: 'PT Sans', sans-serif;
 }
 .insta_innner_container h1 {
-  color: #FF4B6F;
+  /* color: #FF4B6F; */
+  color: #045959;
   font-family: 'Philosopher',sans-serif;
   margin-bottom: -5px;
 
@@ -851,7 +869,8 @@ cursor: pointer;
 
 /* footer section */
 .footer_wrapper {
-  background: #1b202a;
+  /* background: #1b202a; */
+  background-color: #045959;
   min-height: 400px;
   padding: 60px 30px 20px 30px;
   border-bottom: 1px solid #484545;
@@ -866,7 +885,8 @@ cursor: pointer;
     display: none;
   }
   .footer_mobile_title {
-    color: #f01887;
+    /* color: #f01887; */
+    color: #fedc59;;
     font-family: 'Philosopher', sans-serif;
     font-size: 1.5rem;
   }
@@ -895,7 +915,8 @@ cursor: pointer;
 @media screen and (min-width: 768px) {
   .footer_main {
     width: 100%;
-    background: #1b202a;
+    /* background: #1b202a; */
+    background-color: #045959;
     height: auto;
     display: flex;
     justify-content: center;
@@ -922,7 +943,8 @@ cursor: pointer;
     flex: 1;
   }
   .footer_mobile_title {
-    color: #f01887;
+    /* color: #f01887; */
+    color: #fedc59;;
     font-family: 'Philosopher', sans-serif;
     font-size: 1.5rem;
   }

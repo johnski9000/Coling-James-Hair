@@ -21,7 +21,9 @@ function Banner() {
       {/* <Parallax translateY={[60, -40]}> */}
         <div className="text_overlay_wrapper">
         <div className="text_overlay">
-          <h4 className="text_overlay_address">123, Central Square, Boston</h4>
+          <h4 className="text_overlay_address">
+            {/* 123, Central Square, Boston */}
+            </h4>
           <h1 className="text_overlay_title">Welcome to our nails Studio</h1>
           <div className="text_overlay_subtitle">
             A place to treat your self with the most care and relaxation
