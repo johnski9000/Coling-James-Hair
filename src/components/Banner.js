@@ -30,7 +30,7 @@ function Banner() {
           </div>
           <div className="text_overlay_button_container">
             <a href="/">Book Appointment</a>
-            <a href="/">Contact Now</a>
+            <a onclick="window.location.href='tel:07790611737';" href="/" disabled="disabled">Contact Now</a>
           </div>
         </div>
         {/* <div></div> */}
