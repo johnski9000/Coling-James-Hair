@@ -997,3 +997,115 @@ cursor: pointer;
   border-radius: 50%;
   width: 40px;
 }
+.contact_container {
+  margin: 0 auto;
+  max-width: 1125px;
+  display: flex;
+  min-height: 50vh;
+  padding: 40px;
+}
+.contact_form {
+  width: 350px;
+margin: 0 auto;
+padding: 20px 20px;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact_form div {
+  margin-bottom: 20px;
+}
+.contact_form h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Philosopher', sans-serif;
+    font-size: 2.5rem;
+}
+.opening_hours  {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.contact_top_img {
+  background-image: url(https://dev.smartinggoods.com/beautynails/wp-content/uploads/sites/36/2020/05/make-up-kit.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px 0px 120px 0px;
+    position: relative;
+}
+.contact_top_img h2 {
+z-index: 10;
+color: white;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+font-family: 'Philosopher', sans-serif;
+    color: #fedc59;
+    font-size: 2.5rem;
+}
+.contact_top_img div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+}
+.contact_container form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.contact_container form div {
+  display: flex;
+  justify-content: center;
+}
+.contact_container div input {
+  width: 90%;
+  padding: 15px 10px;
+  color: #666;
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+.contact_container div select {
+  width: 96%;
+  padding: 15px 10px;
+  color: #666;
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  display: flex;
+}
+.contact_container div textarea {
+  width: 90%;
+  padding: 15px 10px;
+  color: #666;
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  height: 100px;
+  flex-flow: column;
+}
+.contact_container button {
+  width: 50%;
+  padding: 17px 30px;
+  border: 2px solid #ffffff;
+  border-radius: 7px;
+  font-family: 'PT Sans', sans-serif;
+text-align: center;
+font-size: 15px;
+line-height: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #045959;
+color: white;
+text-decoration: none;
+margin: 0 auto;
+}

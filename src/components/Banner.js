@@ -29,7 +29,7 @@ function Banner() {
             A place to treat your self with the most care and relaxation
           </div>
           <div className="text_overlay_button_container">
-            <a href="/">Book Appointment</a>
+            <a href="/contact">Book Appointment</a>
             <a onclick="window.location.href='tel:07790611737';" href="/" disabled="disabled">Contact Now</a>
           </div>
         </div>
