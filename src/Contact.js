@@ -12,7 +12,7 @@ function Contact() {
     const [loading, setLoading] = useState(false)
     const [loaded, setLoaded] = useState(false)
     const [error, setError] = useState(false)
-    const server = "https://sarah-server-ib82etyi1-johnski9000.vercel.app"
+    const server = "https://sarah-server.vercel.app/api"
 
 
     function handleChange(event) {
