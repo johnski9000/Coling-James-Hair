@@ -12,7 +12,7 @@ function Contact() {
     const [loading, setLoading] = useState(false)
     const [loaded, setLoaded] = useState(false)
     const [error, setError] = useState(false)
-
+    const server = "https://sarah-server-ib82etyi1-johnski9000.vercel.app"
 
 
     function handleChange(event) {
@@ -32,7 +32,7 @@ function Contact() {
     function formSubmit(event) {
         event.preventDefault()
         setLoading(true)
-        axios.post('http://localhost:3001/send_email', {
+        axios.post(`${server}/send_email`, {
             name: name,
             email: email,
             number: number,
