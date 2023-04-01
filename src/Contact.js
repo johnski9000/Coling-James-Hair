@@ -10,6 +10,8 @@ function Contact() {
     const [service, setService] = useState(null)
     const [message, setMessage] = useState(null)
     const [loading, setLoading] = useState(false)
+    const [loaded, setLoaded] = useState(false)
+    const [error, setError] = useState(false)
 
 
 
@@ -37,13 +39,21 @@ function Contact() {
             service: service,
             message: message
           })
-          .then(function (response) {
-            console.log("sent succesfully")
-          })
-          .then(function (error) {
-            console.log(error)
+          .then(function (response, error) {
+            if (response.status === 200) {
+                console.log("email sent")
+                setLoaded(true)
+            }
+            if (error) {
+                console.log(error)
+                setLoading(false)
+                setError(true)
+            }
           })
     }
+    const loading_animation = loading === true && loaded === false
+    const loading_complete = loading === true && loaded === true
+    const loading_error = loading === true && error === true
   return (
     <div 
     >
@@ -54,8 +64,8 @@ function Contact() {
       
       </div>
       <div className="contact_container">
-        <div className="contact_form">
-            { loading === false && <><h2>Get in touch</h2>
+        {loading === false && <div className="contact_form">
+              <h2>Get in touch</h2>
             <div className="opening_hours">
                 <h3>Opening Hours</h3>
                 <div>Monday - Friday : 10AM - 6:30PM</div>
@@ -83,9 +93,22 @@ function Contact() {
               <textarea placeholder="Message" onChange={(event) => handleChange(event)} id="message"/>
             </div>
             <button onClick={(event) => formSubmit(event)}>Send Request</button>
-          </form> </>}
-        </div>
-        <div className="contact2"></div>
+          </form> 
+         
+        </div>}
+         {loading_animation && 
+            <div className="contact_loading">
+              <img src="https://jpl.a.bigcontent.io/v1/static/spinner-1s-200px-9064981b80e59f1b663c17fab41563c9" alt="ads"/>
+              </div>}
+              {loading_complete === true && 
+            <div className="contact_loaded">
+              We'll be in touch!
+              </div>}
+              {loading_error && 
+              <div className="contact_loaded">
+              There was an error!
+              </div>
+              }
       </div>
       <Footer/>
       <div className="copyright" style={{backgroundColor: "#045959", textAlign:"center", color:"#ffffff"}}>Copyright © 2023 Beauty Nails</div>

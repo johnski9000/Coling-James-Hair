@@ -18,9 +18,9 @@ function AboutSection() {
         </div>
       </div>
       <div className="about_us_text">
-        <div>about us</div>
-        <h2>Established since 2016</h2>
-        <p>Tell people a little about your studio. Some lines about your expertise and how you entered this field. Listing your services and achievements at times attracts more customers making sure you see a lot more people walking into your studio.</p>
+        {/* <div>about us</div> */}
+        <h2>Abous Us</h2>
+        <p>With over 20 years of experience, Sarah runs The Nails Shed, a beauty, cosmetic, and personal care business that offers top-quality services. Our team of experts ensures clients receive the best treatment, leaving them feeling pampered and refreshed. From nail and skincare to massages, we provide a range of services to meet your needs.</p>
         {/* <div>
             <a href="/">Read more</a>
         </div> */}

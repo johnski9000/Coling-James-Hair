@@ -29,7 +29,63 @@
   align-items: center;
   width: 100%;
 }
+.menu_mobile {
+  height: 100vh;
+  width: 210px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  margin-right: -210px;
+  transition: 1s;
+}
 
+.menu_mobile.open {
+  height: 100vh;
+  width: 210px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  margin-right: 0;
+  transition: 1s;
+
+}
+.menu_mobile_relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.menu_mobile_overlay {
+  background-color: rgba(4,89,89, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.menu_mobile_items {
+  position: relative;
+  list-style: none;
+  padding: unset;
+  padding-top: 84px;
+}
+.menu_mobile_items li {
+  padding: 30px 20px;
+  text-align: center;
+  transition: .5s;
+}
+.menu_mobile_items li:hover {
+  color: white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  transition: .5s;
+  margin-top: -10px;
+}
+.menu_mobile_items li a {
+  color: white;
+  text-decoration: none;
+}
 .menu {
   display: none;
   font-family: 'PT Sans', sans-serif;
@@ -466,13 +522,14 @@
   }
   .about_us_text h2 {
     font-family: 'Philosopher', sans-serif;
-    color: #ee3a5e;
+    color: #045959;
     text-align: center;
   }
   .about_us_text p {
     text-align: center;
     font-family: 'PT Sans', sans-serif;
     font-weight: 300;
+    line-height: 1.7rem;
     color: #3E4359;
   }
 }
@@ -526,7 +583,7 @@
   }
   .about_us_text h2 {
     font-family: 'Philosopher', sans-serif;
-    color: #ee3a5e;
+    color: #045959;
     text-align: left;
     font-size: 34px;
   }
@@ -536,6 +593,7 @@
     font-weight: 300;
     color: #3E4359;
     font-size: 17px;
+    line-height: 1.7rem;
   }
 }
 
@@ -921,6 +979,7 @@ cursor: pointer;
     font-family: 'PT Sans', sans-serif;
     font-size: .9rem;
   }
+ 
   .socials_footer_mobile {
     display: flex;
     list-style: none;
@@ -1003,6 +1062,8 @@ cursor: pointer;
   display: flex;
   min-height: 50vh;
   padding: 40px;
+  justify-content: center;
+  align-items: center;
 }
 .contact_form {
   width: 350px;
@@ -1108,4 +1169,13 @@ line-height: 1.2em;
 color: white;
 text-decoration: none;
 margin: 0 auto;
+}
+
+.contact_loading,
+.contact_loaded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
