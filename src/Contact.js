@@ -12,7 +12,8 @@ function Contact() {
     const [loading, setLoading] = useState(false)
     const [loaded, setLoaded] = useState(false)
     const [error, setError] = useState(false)
-    const server = "https://sarah-server.vercel.app/api"
+    const server = "https://sarah-server.vercel.app"
+    const serverTest = "https://sarah-server-e88urpxco-johnski9000.vercel.app"
 
 
     function handleChange(event) {
@@ -29,16 +30,19 @@ function Contact() {
             setMessage(event.target.value)
         }
     }
+            
+
     function formSubmit(event) {
         event.preventDefault()
         setLoading(true)
-        axios.post(`${server}/send_email`, {
+        axios.post("https://sarah-server-kepcgwceh-johnski9000.vercel.app/send_email", {
             name: name,
             email: email,
             number: number,
             service: service,
             message: message
           })
+        // axios.get("https://sarah-server-7jiv3o47z-johnski9000.vercel.app/", {})
           .then(function (response, error) {
             if (response.status === 200) {
                 console.log("email sent")
