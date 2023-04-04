@@ -1,5 +1,6 @@
 /* navigation */
 .header {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   padding: 7px 0px;
   height: 85px;
   /* background-color: rgba(0,0,0,0.69); */
@@ -30,6 +31,7 @@
   width: 100%;
 }
 .menu_mobile {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   height: 100vh;
   width: 210px;
   position: fixed;
@@ -71,6 +73,7 @@
   padding-top: 84px;
 }
 .menu_mobile_items li {
+  text-transform: uppercase;
   padding: 30px 20px;
   text-align: center;
   transition: .5s;
@@ -949,6 +952,7 @@ cursor: pointer;
 /* footer section */
 .footer_wrapper {
   /* background: #1b202a; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   background-color: #045959;
   min-height: 400px;
   padding: 60px 30px 20px 30px;

@@ -1,7 +1,9 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 function Contact() {
     const [name, setName] = useState(null)
@@ -13,6 +15,10 @@ function Contact() {
     const [loaded, setLoaded] = useState(false)
     const [error, setError] = useState(false)
     const server = "https://sarah-server.vercel.app"
+
+    useEffect(() => {
+        Aos.init()
+      }, [])
 
 
     function handleChange(event) {
@@ -29,7 +35,6 @@ function Contact() {
             setMessage(event.target.value)
         }
     }
-            
 
     function formSubmit(event) {
         event.preventDefault()
@@ -67,7 +72,7 @@ function Contact() {
       <div></div>
       
       </div>
-      <div className="contact_container">
+      <div className="contact_container" data-aos="fade-up">
         {loading === false && <div className="contact_form">
               <h2>Get in touch</h2>
             <div className="opening_hours">
