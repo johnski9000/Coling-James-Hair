@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 import { Parallax } from "react-scroll-parallax";
-import Aos from "aos"
-import "aos/dist/aos.css"
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Banner() {
   useEffect(() => {
-    Aos.init()
-  }, [])
-  
-  
+    Aos.init();
+  }, []);
+
   return (
     <div className="banner_wrapper">
       <div class="background-overlay"></div>
@@ -26,24 +25,31 @@ function Banner() {
         </svg>
       </div>
       {/* <Parallax translateY={[60, -40]}> */}
-        <div className="text_overlay_wrapper">
+      <div className="text_overlay_wrapper">
         <div className="text_overlay">
           <h4 className="text_overlay_address">
             {/* 123, Central Square, Boston */}
-            </h4>
-          <h1 className="text_overlay_title" data-aos="fade-right">Welcome to our nails Studio</h1>
-          <div className="text_overlay_subtitle" >
-            A place to treat your self with the most care and relaxation
+          </h4>
+          <h1 className="text_overlay_title" data-aos="fade-right">
+            Welcome to our Hair Salon
+          </h1>
+          <div className="text_overlay_subtitle">
+            A place to pamper yourself with the finest hair care and relaxation
           </div>
           <div className="text_overlay_button_container">
             <a href="/contact">Book Appointment</a>
-            <a onclick="window.location.href='tel:07790611737';" href="/" disabled="disabled">Contact Now</a>
+            <a
+              onclick="window.location.href='tel:07790611737';"
+              href="/"
+              disabled="disabled"
+            >
+              Contact Now
+            </a>
           </div>
         </div>
         {/* <div></div> */}
       </div>
       {/* </Parallax> */}
-      
     </div>
   );
 }

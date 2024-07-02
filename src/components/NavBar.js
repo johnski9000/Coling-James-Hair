@@ -7,12 +7,14 @@ function NavBar() {
     <div className="header">
       <div className="header_wrapper">
         <div className="logo">
-          <img
-            src="https://i8.amplience.net/i/jpl/screenshot-2023-03-29-at-212709-removebg-preview-2e74bb6dfdfdbe44cd9024dd691c8c85"
-            alt="logo"
-            // width={180}
-            height={80}
-          />
+          <a href="/">
+            <img
+              src={logo}
+              alt="logo"
+              // width={180}
+              height={80}
+            />
+          </a>
         </div>
         <div className={open ? "menu_mobile open" : "menu_mobile"}>
           <div className="menu_mobile_relative">
@@ -37,7 +39,7 @@ function NavBar() {
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Pricing</a>
-          <a href="/">Contact</a>
+          <a href="/contact">Contact</a>
           <div className="number">
             <img
               src="https://i8.amplience.net/i/jpl/phone-call-877402671b025927871de04103cbe388"
@@ -47,7 +49,7 @@ function NavBar() {
               className="phone_number"
               onclick="window.location.href='tel:07790611737';"
             >
-              07790611737
+              01619268999
             </div>
           </div>
         </div>

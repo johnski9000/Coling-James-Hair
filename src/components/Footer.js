@@ -1,4 +1,5 @@
 import React from "react";
+import PriceList from "../images/price_list.jpeg";
 
 function Footer() {
   return (
@@ -8,6 +9,11 @@ function Footer() {
           <div className="footer_mobile_title">Quick Links</div>
           <ul>
             <li>
+              <a href={PriceList} download>
+                Price List
+              </a>
+            </li>
+            {/* <li>
               <a>insert text</a>
             </li>
             <li>
@@ -18,15 +24,15 @@ function Footer() {
             </li>
             <li>
               <a>insert text</a>
-            </li>
-            <li>
-              <a>insert text</a>
-            </li>
+            </li> */}
           </ul>
           <div className="footer_mobile_title">Follow Us</div>
           <ul className="socials_footer_mobile">
             <li>
-              <a className="social_icon" href="https://www.instagram.com/thenailshed62/">
+              <a
+                className="social_icon"
+                href="https://www.facebook.com/profile.php?id=100083305334280&sk=about"
+              >
                 <img
                   src="https://i8.amplience.net/i/jpl/instagram-1-5c570427ee23f69853d28aec805eee79"
                   alt="instagram"
@@ -34,7 +40,10 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a className="social_icon" href="https://www.facebook.com/thenailshed62">
+              <a
+                className="social_icon"
+                href="https://www.facebook.com/profile.php?id=100083305334280&sk=about"
+              >
                 <img
                   src="https://i8.amplience.net/i/jpl/facebook-1-8f5ce27564945d2c9a10ef827549a78c"
                   alt="facebook"
@@ -42,7 +51,10 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a className="social_icon">
+              <a
+                href="https://www.facebook.com/profile.php?id=100083305334280&sk=about"
+                className="social_icon"
+              >
                 <img
                   src="https://i8.amplience.net/i/jpl/twitter-1-1ac19cc180bd5411c8c31919998ab681"
                   alt="twitter"
@@ -50,16 +62,16 @@ function Footer() {
               </a>
             </li>
           </ul>
-          <div className="footer_mobile_title">contact</div>
+          <div className="footer_mobile_title">Email</div>
           <ul>
             <li>
-              <a>sarrabirrell@yahoo.co.uk</a>
+              <a>01619268999</a>
             </li>
           </ul>
           <div className="footer_mobile_title">Call Us</div>
           <ul>
             <li>
-              <a>07790611737</a>
+              <a>01619268999</a>
             </li>
           </ul>
         </div>
@@ -68,6 +80,11 @@ function Footer() {
             <div className="footer_mobile_title">Quick Links</div>
             <ul>
               <li>
+                <a href={PriceList} download>
+                  Price List
+                </a>{" "}
+              </li>
+              {/* <li>
                 <a>insert text</a>
               </li>
               <li>
@@ -78,15 +95,15 @@ function Footer() {
               </li>
               <li>
                 <a>insert text</a>
-              </li>
-              <li>
-                <a>insert text</a>
-              </li>
+              </li> */}
             </ul>
             <div className="footer_mobile_title">Follow Us</div>
             <ul className="socials_footer_mobile">
               <li>
-                <a className="social_icon" href="https://www.instagram.com/thenailshed62/">
+                <a
+                  className="social_icon"
+                  href="https://www.facebook.com/profile.php?id=100083305334280&sk=about"
+                >
                   <img
                     src="https://i8.amplience.net/i/jpl/instagram-1-5c570427ee23f69853d28aec805eee79"
                     alt="instagram"
@@ -94,7 +111,10 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a className="social_icon" href="https://www.facebook.com/thenailshed62">
+                <a
+                  className="social_icon"
+                  href="https://www.facebook.com/profile.php?id=100083305334280&sk=about"
+                >
                   <img
                     src="https://i8.amplience.net/i/jpl/facebook-1-8f5ce27564945d2c9a10ef827549a78c"
                     alt="facebook"
@@ -102,7 +122,10 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a className="social_icon">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100083305334280&sk=about"
+                  className="social_icon"
+                >
                   <img
                     src="https://i8.amplience.net/i/jpl/twitter-1-1ac19cc180bd5411c8c31919998ab681"
                     alt="twitter"
@@ -112,7 +135,7 @@ function Footer() {
             </ul>
           </div>
           <div className="footer_right">
-            <div className="footer_mobile_title">contact</div>
+            <div className="footer_mobile_title">Email</div>
             <ul>
               <li>
                 <a>sarrabirrell@yahoo.co.uk</a>
@@ -121,7 +144,13 @@ function Footer() {
             <div className="footer_mobile_title">Call Us</div>
             <ul>
               <li>
-                <a href="/" disabled="disabled" onclick="window.location.href='tel:07790611737';">07790611737</a>
+                <a
+                  href="/"
+                  disabled="disabled"
+                  onclick="window.location.href='tel:07790611737';"
+                >
+                  01619268999
+                </a>
               </li>
             </ul>
           </div>
