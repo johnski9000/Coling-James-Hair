@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import logo from "../images/logo.png";
+import { useLocation } from "react-router-dom";
 
-function NavBar() {
+function NavBar({ handleScroll, aboutRef, priceRef }) {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+  console.log(isHomePage);
   return (
     <div className="header">
       <div className="header_wrapper">
@@ -24,10 +28,24 @@ function NavBar() {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/">About</a>
+                <a
+                  href={isHomePage ? "#about" : "/"}
+                  onClick={() => {
+                    handleScroll(aboutRef.current);
+                  }}
+                >
+                  About
+                </a>
               </li>
               <li>
-                <a href="/">Pricing</a>
+                <a
+                  href={isHomePage ? "#price" : "/"}
+                  onClick={() => {
+                    handleScroll(priceRef.current);
+                  }}
+                >
+                  Pricing
+                </a>
               </li>
               <li>
                 <a href="/contact">Contact</a>
@@ -37,8 +55,22 @@ function NavBar() {
         </div>
         <div className={"menu"}>
           <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/">Pricing</a>
+          <a
+            href={isHomePage ? "#about" : "/"}
+            onClick={() => {
+              handleScroll(aboutRef.current);
+            }}
+          >
+            About
+          </a>
+          <a
+            href={isHomePage ? "#price" : "/"}
+            onClick={() => {
+              handleScroll(priceRef.current);
+            }}
+          >
+            Pricing
+          </a>
           <a href="/contact">Contact</a>
           <div className="number">
             <img

@@ -11,29 +11,37 @@ function AboutSection() {
         <div className="about_gallery_item">
           <div
             className="about_gallery_item_inner"
+            data-aos="fade-up"
+            data-aos-delay="100"
             style={{ backgroundImage: `url(${ImageOne})` }}
           ></div>
         </div>
         <div className="about_gallery_item">
           <div
+            data-aos="fade-up"
+            data-aos-delay="300"
             className="about_gallery_item_inner"
             style={{ backgroundImage: `url(${ImageTwo})` }}
           ></div>
         </div>
         <div className="about_gallery_item">
           <div
+            data-aos="fade-up"
+            data-aos-delay="500"
             className="about_gallery_item_inner"
             style={{ backgroundImage: `url(${ImageThree})` }}
           ></div>
         </div>
         <div className="about_gallery_item">
           <div
+            data-aos="fade-up"
+            data-aos-delay="700"
             className="about_gallery_item_inner"
             style={{ backgroundImage: `url(${ImageFour})` }}
           ></div>
         </div>
       </div>
-      <div className="about_us_text">
+      <div className="about_us_text" data-aos="fade-right" data-aos-delay="900">
         <h2>About Us</h2>
         <p>
           Welcome to Colin James Hairdressing, the premier establishment for

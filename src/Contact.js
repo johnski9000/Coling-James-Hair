@@ -61,6 +61,7 @@ function Contact() {
   const loading_animation = loading === true && loaded === false;
   const loading_complete = loading === true && loaded === true;
   const loading_error = loading === true && error === true;
+
   return (
     <div>
       <NavBar />
@@ -70,6 +71,18 @@ function Contact() {
       </div>
 
       <div className="contact_container" data-aos="fade-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.635424620071!2d-2.355212184227718!3d53.386257979978565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae0e82b8f52f%3A0xf5a24fdb4b57e0cf!2s22%20The%20Downs%2C%20Altrincham%20WA14%202PU%2C%20UK!5e0!3m2!1sen!2sus!4v1601138221085!5m2!1sen!2sus"
+          // width="600"
+          height="450"
+          frameBorder="0"
+          style={{ border: 0, flex: 1, width: "100%" }}
+          allowFullScreen=""
+          aria-hidden="false"
+          tabIndex="0"
+          title="map"
+        />
+
         {loading === false && (
           <div className="contact_form">
             <h2>Get in touch</h2>
@@ -169,12 +182,28 @@ function Contact() {
       <div
         className="copyright"
         style={{
-          backgroundColor: "#045959",
+          backgroundColor: "#61696c",
           textAlign: "center",
           color: "#ffffff",
         }}
       >
-        Copyright © 2023 Beauty Nails
+        Copyright © 2024 Colin James Hairdressing ltd
+      </div>
+      <div
+        className="copyright"
+        style={{
+          backgroundColor: "#61696c",
+          textAlign: "center",
+          color: "#ffffff",
+        }}
+      >
+        Powered by{" "}
+        <a
+          href="https://jw-digital.co.uk/"
+          style={{ color: "white", fontWeight: "bold" }}
+        >
+          JW Digital
+        </a>
       </div>
     </div>
   );

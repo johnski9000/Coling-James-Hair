@@ -6,14 +6,34 @@ import PriceSection from "./components/PriceSection";
 import InstaFeeds from "./components/InstagramFeed";
 import Footer from "./components/Footer";
 import Location from "./components/Location";
+import { useRef } from "react";
 
 function Home() {
+  const aboutRef = useRef(null);
+  const priceRef = useRef(null);
+  const handleScroll = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="App">
-      <NavBar />
+      <NavBar
+        handleScroll={handleScroll}
+        aboutRef={aboutRef}
+        priceRef={priceRef}
+      />
       <Banner />
-      <AboutSection />
-      <PriceSection />
+      <div ref={aboutRef}>
+        {" "}
+        <AboutSection />
+      </div>
+
+      <div ref={priceRef}>
+        <PriceSection />
+      </div>
       {/* <InstaFeeds /> */}
       {/* <Location /> */}
       <Footer />
@@ -26,6 +46,22 @@ function Home() {
         }}
       >
         Copyright © 2024 Colin James Hairdressing ltd
+      </div>
+      <div
+        className="copyright"
+        style={{
+          backgroundColor: "#61696c",
+          textAlign: "center",
+          color: "#ffffff",
+        }}
+      >
+        Powered by{" "}
+        <a
+          href="https://jw-digital.co.uk/"
+          style={{ color: "white", fontWeight: "bold" }}
+        >
+          JW Digital
+        </a>
       </div>
     </div>
   );

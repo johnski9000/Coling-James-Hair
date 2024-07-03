@@ -5,7 +5,7 @@ function PriceSection() {
     <div className="price_section_wrapper">
       <div className="discount_banner">
         <div className="discount_banner_overlay"></div>
-        <div className="price_text_section">
+        <div className="price_text_section" data-aos="fade-up">
           {/* <div className="price_image_wrapper">
             <img
               src="https://smartinggoods.com/beautynails/wp-content/uploads/sites/36/2020/05/sale-badge.png"
@@ -25,7 +25,7 @@ function PriceSection() {
           </div>
         </div>
       </div>
-      <div className="discount_overlap_title">
+      <div className="discount_overlap_title" data-aos="fade-up">
         <div className="discount_title_overlay"></div>
         <h2>Hair Care Services</h2>
         <p>
@@ -35,7 +35,7 @@ function PriceSection() {
         </p>
       </div>
       <div className="prices_flex">
-        <div className="price_item">
+        <div className="price_item" data-aos="fade-up" data-aos-delay="100">
           <h2>
             Gents
             <div className="underline_price"></div>
@@ -45,7 +45,7 @@ function PriceSection() {
             <div className="price_block">From £25</div>
           </h5>
         </div>
-        <div className="price_item">
+        <div className="price_item" data-aos="fade-up" data-aos-delay="300">
           <h2>
             Ladies
             <div className="underline_price"></div>
@@ -59,7 +59,7 @@ function PriceSection() {
             <div className="price_block">From £25</div>
           </h5>
         </div>
-        <div className="price_item">
+        <div className="price_item" data-aos="fade-up" data-aos-delay="500">
           <h2>
             Colour Services
             <div className="underline_price"></div>

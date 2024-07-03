@@ -26,13 +26,11 @@ function Banner() {
       </div>
       {/* <Parallax translateY={[60, -40]}> */}
       <div className="text_overlay_wrapper">
-        <div className="text_overlay">
+        <div className="text_overlay" data-aos="fade-right">
           <h4 className="text_overlay_address">
             {/* 123, Central Square, Boston */}
           </h4>
-          <h1 className="text_overlay_title" data-aos="fade-right">
-            Welcome to our Hair Salon
-          </h1>
+          <h1 className="text_overlay_title">Welcome to our Hair Salon</h1>
           <div className="text_overlay_subtitle">
             A place to pamper yourself with the finest hair care and relaxation
           </div>
