@@ -77,10 +77,7 @@ function NavBar({ handleScroll, aboutRef, priceRef }) {
               src="https://i8.amplience.net/i/jpl/phone-call-877402671b025927871de04103cbe388"
               alt=""
             />
-            <div
-              className="phone_number"
-              onclick="window.location.href='tel:07790611737';"
-            >
+            <div className="phone_number" href="tel:01619268999">
               01619268999
             </div>
           </div>
